@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Box, Typography } from "@mui/material";
+import { EventBlock } from "../components";
+import { DragDropContext } from "react-beautiful-dnd";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +25,9 @@ export default function Home() {
             alignItems: "center",
             height: "100vh",
           }}
-        ></Box>
+        >
+          <Box sx={{ width: "80%", height: "80%", background: "blue" }}></Box>
+        </Box>
       </main>
     </>
   );
